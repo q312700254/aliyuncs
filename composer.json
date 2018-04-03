@@ -9,7 +9,6 @@
             "email": "qng3344@vip.qq.com"
         }
     ],
-    "minimum-stability": "alpha",
     "require": {
         "php": ">=5.3.3"
     },
