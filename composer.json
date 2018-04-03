@@ -1,0 +1,32 @@
+{
+    "name": "llwch/aliyuncs",
+    "description": "Aliyuncs for php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wuchao",
+            "email": "qng3344@vip.qq.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AliyunCs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AliyunCs\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
