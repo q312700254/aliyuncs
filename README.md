@@ -1,6 +1,6 @@
 Aliyuncs for php 
 --------------------------------
-
+就是一个封装了阿里云图片鉴黄，涉政暴恐，场景API的composer包，给自己用的。。。。。
 
 ## Contents
 - [Installation](#installation)
