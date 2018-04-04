@@ -12,8 +12,16 @@ use AliyunCs\Core\Regions\EndpointProvider;
 
 abstract class RequestClient
 {
-    public function __construct()
+    protected $accessKey;
+
+    protected $secretKey;
+
+    protected $response;
+
+    public function __construct($accessKey, $secretKey)
     {
+        $this->accessKey = $accessKey;
+        $this->secretKey = $secretKey;
         $this->defineVar();
         $this->setEndpoints();
     }
