@@ -16,7 +16,7 @@ use AliyunCs\Core\Exception\ClientException;
 
 class ImageSyncScanRequestClient extends RequestClient
 {
-    public function request($imageUrl, array $scenes)
+    public function request($imageUrl, array $scenes = ['porn', 'terrorism', 'live'])
     {
         $iClientProfile = DefaultProfile::getProfile("cn-shanghai", $this->accessKey, $this->secretKey);
         DefaultProfile::addEndpoint("cn-shanghai", "cn-shanghai", "Green", "green.cn-shanghai.aliyuncs.com");
