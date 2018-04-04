@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace AliyunCs\Core\Auth;
+
 class ShaHmac256Signer implements ISigner
 {
     public function signString($source, $accessSecret)

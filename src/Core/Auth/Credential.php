@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace AliyunCs\Core\Auth;
+
 class Credential
 {
     private $dateTimeFormat = 'Y-m-d\TH:i:s\Z';

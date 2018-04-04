@@ -17,7 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-class ClientException extends Exception
+namespace AliyunCs\Core\Exception;
+
+class ClientException extends \Exception
 {
     public function __construct($errorMessage, $errorCode)
     {

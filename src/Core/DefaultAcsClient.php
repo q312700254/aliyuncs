@@ -17,6 +17,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace AliyunCs\Core;
+
+use AliyunCs\Core\Http\HttpHelper;
+use AliyunCs\Core\Regions\LocationService;
+use AliyunCs\Core\Regions\EndpointProvider;
+use AliyunCs\Core\Exception\ServerException;
+
 class DefaultAcsClient implements IAcsClient
 {
     public $iClientProfile;
@@ -73,7 +80,6 @@ class DefaultAcsClient implements IAcsClient
         if ($this->__urlTestFlag__) {
             throw new ClientException($requestUrl, "URLTestFlagIsSet");
         }
-
         if (count($request->getDomainParameter())>0) {
             $httpResponse = HttpHelper::curl($requestUrl, $request->getMethod(), $request->getDomainParameter(), $request->getHeaders());
         } else {
@@ -83,7 +89,7 @@ class DefaultAcsClient implements IAcsClient
         $retryTimes = 1;
         while (500 <= $httpResponse->getStatus() && $autoRetry && $retryTimes < $maxRetryNumber) {
             $requestUrl = $request->composeUrl($iSigner, $credential, $domain);
-            
+
             if (count($request->getDomainParameter())>0) {
                 $httpResponse = HttpHelper::curl($requestUrl, $request->getDomainParameter(), $request->getHeaders());
             } else {

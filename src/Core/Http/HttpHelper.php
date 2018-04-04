@@ -17,6 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace AliyunCs\Core\Http;
+
 class HttpHelper
 {
     public static $connectTimeout = 30;//30 second

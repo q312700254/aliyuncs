@@ -17,13 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace AliyunCs\Core\Regions;
 
-define("LOCATION_SERVICE_PRODUCT_NAME", "Location");
-define("LOCATION_SERVICE_DOMAIN", "location.aliyuncs.com");
-define("LOCATION_SERVICE_VERSION", "2015-06-12");
-define("LOCATION_SERVICE_DESCRIBE_ENDPOINT_ACTION", "DescribeEndpoints");
-define("LOCATION_SERVICE_REGION", "cn-hangzhou");
-define("CACHE_EXPIRE_TIME", 3600);
+use AliyunCs\Core\RpcAcsRequest;
 
 class DescribeEndpointRequest extends RpcAcsRequest
 {

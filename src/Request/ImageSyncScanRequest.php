@@ -17,9 +17,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Request;
+namespace AliyunCs\Request;
 
-class ImageSyncScanRequest extends \RoaAcsRequest
+use AliyunCs\Core\RoaAcsRequest;
+
+class ImageSyncScanRequest extends RoaAcsRequest
 {
 	function  __construct()
 	{

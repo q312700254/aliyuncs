@@ -17,6 +17,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace AliyunCs\Core\Profile;
+
+use AliyunCs\Core\Auth\Credential;
+use AliyunCs\Core\Auth\ShaHmac1Signer;
+use AliyunCs\Core\Regions\LocationService;
+use AliyunCs\Core\Regions\EndpointProvider;
+
 class DefaultProfile implements IClientProfile
 {
 	private static $profile;
