@@ -22,7 +22,7 @@ Or add
 
 to your composer.json. Then run `composer install` or `composer update`.
 
-## example
+## Example
 
 An example of how to used:
 
